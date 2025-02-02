@@ -1,0 +1,158 @@
+body {
+  font-family: Arial, sans-serif;
+
+  background-color: #f0f0f0;
+  background-image: url("https://images.pexels.com/photos/159020/sunset-sky-afterglow-evening-sky-159020.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.container {
+  text-align: center;
+  padding: 20px;
+}
+
+/*search-bar*/
+.search-bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*search-bar-input*/
+.search-bar-input {
+  background-color: transparent;
+  color: white;
+  border: 60px;
+  border-radius: 6px;
+  width: 90%;
+  padding: 25px;
+  font-size: medium;
+  border: 2px solid rgb(207, 47, 207);
+  outline: none;
+}
+
+/*search-bar-input  boarder line around the search bar*/
+.search-bar-input:focus {
+  border: 2px solid rgb(207, 47, 207);
+  outline: 2px solid rgb(207, 47, 207);
+}
+
+.search-bar-input::placeholder {
+  color: white;
+  font-style: italic;
+  opacity: 0.8;
+}
+
+/*search-bar-button*/
+.search-bar-button {
+  border: none;
+  border-radius: 20px;
+  color: rgb(235, 229, 229);
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+
+  background-color: transparent;
+  color: rgb(207, 47, 207);
+  border: 2px solid rgb(207, 47, 207);
+}
+
+.search-bar-button:hover {
+  background-color: rgb(207, 47, 207);
+  color: white;
+}
+
+main {
+  padding: 40px 0;
+}
+
+.city-container-name {
+  color: rgb(78, 19, 73);
+}
+
+.weather-info {
+  color: whitesmoke;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: right;
+  font-weight: 500px;
+}
+
+.weather-info strong {
+  color: rgb(82, 10, 82);
+}
+
+.degree-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.degree-icon {
+  margin-bottom: 10px;
+
+  font-size: 60px;
+  top: 2px;
+  position: relative;
+}
+
+.temperature {
+  display: inline-flex;
+  align-items: baseline;
+  position: relative;
+}
+
+.degree-nr {
+  font-size: 45px;
+  margin-left: 0.2 rem;
+  font-weight: bolder;
+  color: rgb(78, 19, 73);
+  flex-direction: row;
+
+  display: inline-block;
+}
+
+.degree {
+  font-size: 20px;
+  position: absolute;
+  top: -8px;
+  right: -28px;
+  margin-left: 5px;
+  margin-top: 10px;
+  font-weight: 1 10;
+  color: rgb(78, 19, 73);
+}
+
+footer {
+  border-top: 1px solid purple;
+  padding: 30px 0 0 0;
+  text-align: center;
+  color: white;
+}
+
+.weather-forecast-date {
+  color: rgb(1, 175, 187) !important;
+
+  text-align: center;
+
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.weather-forecast-icon {
+  font-size: 30px;
+  text-align: center;
+}
+
+.weather-forecast-temperatures {
+  text-align: center;
+  color: rgb(114, 4, 124);
+}
