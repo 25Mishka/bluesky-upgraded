@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="bluesky-upgraded\index.css" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <title>Blueskyweather app upgrade</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <form class="search-bar" id="search-bar">
+          <input
+            type="search"
+            placeholder="Enter a city.."
+            required
+            id="search-bar-input"
+            class="search-bar-input"
+          />
+          <input type="submit" value="Search" class="search-bar-button" />
+        </form>
+      </header>
+
+      <main>
+        <div class="city-container">
+          <div>
+            <h1 class="city-container-name" id="city"></h1>
+
+            <div class="weather-info">
+              <p>
+                <span id="time"> </span>,
+
+                <br />
+                Humidity : <strong id="humidity"> </strong> ,
+
+                <br />
+                Wind: <strong id="wind-speed"> </strong>,
+
+                <br />
+
+                <span id="description"></span>
+              </p>
+            </div>
+          </div>
+
+          <div class="degree-container">
+            <div id="icon"></div>
+
+            <div class="temperature">
+              <span class="degree-nr" id="temperatures"> </span>
+
+              <span class="degree">°C</span>
+            </div>
+          </div>
+        </div>
+        <br />
+      </main>
+    </div>
+    <div class="weather-forecast">
+      <div class="weather-forecast-day">
+        <div class="weather-forecast-date">Tues</div>
+        <div class="weather-forecast-icon">☁️</div>
+        <div class="weather-forecast-temperatures"><strong> 15°C </strong></div>
+      </div>
+    </div>
+
+    <br />
+
+    <footer>
+      Coded by
+      <a href="https://github.com/25Mishka"> Mosa Mokebe </a>
+      code on
+      <a
+        href="https://github.com/25Mishka/bluesky/commit/b0b1f1927fee722f59693e0efedc064daed474d5"
+        >GitHub
+      </a>
+
+      and hosted
+      <a href="https://app.netlify.com/sites/blueskyweathersite/overview">
+        on Netlify
+      </a>
+    </footer>
+
+    <script src="bluesky-upgraded\index.js"></script>
+  </body>
+</html>
