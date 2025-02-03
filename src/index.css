@@ -131,10 +131,10 @@ main {
   color: rgb(78, 19, 73);
 }
 
-.wather-forecast{
-display:flex;
-justify-content: space-around;
-margin-top: 30px;
+.weather-forecast {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30px;
 }
 
 .weather-forecast-date {
@@ -154,15 +154,13 @@ margin-top: 30px;
 .weather-forecast-temperatures {
   text-align: center;
   color: rgb(114, 4, 124);
-  display :flex
+  display: flex;
   justify-content: center;
-
 }
 
-.weather-forecast-temperature{
+.weather-forecast-temperature {
   padding: 0 10px;
 }
-
 
 footer {
   border-top: 1px solid purple;
